@@ -2,6 +2,7 @@ import tkinter as tk
 
 from filemenu import FileMenu
 from loginform import Login
+from welderlabel import WelderLabel
 
 
 class CanLineApp:
@@ -17,7 +18,9 @@ class CanLineApp:
         self.master.state('zoomed')
         FileMenu(self.master).create_file_menu()
         # UserManager(self.master).create_new_user_form()
-        self.login()
+        # self.login()
+        WelderLabel("1234", '987544', 'PP12345', '0.21 05/WHITE2/05 CLEAR', 'fz086456', '0.18 BLUE MOON',
+                    'TDA200/004-1')
 
     def login(self):
         Login(self.master).create_login_window()
